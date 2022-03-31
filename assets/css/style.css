@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes car{
+    0%{
+        transform: translateX(-75%);
+    }
+    50%{
+        transform: translateX(800%);
+    }
+    100%{
+        transform: translateX(0%);
+    } 
+}
+div{
+    width: 100px;
+    height: 500px;
+    animation: car 6s;
+    animation-iteration-count: 3;
+}
+img{
+    width: 50px;
+}
+
+
+@media (max-width: 575.98px) { 
+div{
+ animation-duration: 4s;
+}
+@keyframes car{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0%);
+    } 
+}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    div{
+        animation-duration: 4s;
+       }
+       @keyframes car{
+           0%{
+               transform: translateX(0%);
+           }
+           50%{
+               transform: translateX(200%);
+           }
+           100%{
+               transform: translateX(0%);
+           } 
+       }
+    }
